@@ -1,0 +1,106 @@
+@font-face {
+    font-family: MatterLight;
+    src: url(/Matter-Light.ttf);
+}
+
+@font-face {
+    font-family: MatterMedium;
+    src: url(/Matter-Medium.ttf);
+}
+
+@font-face {
+    font-family: MatterSemiBold;
+    src: url(/Matter-SemiBold.ttf);
+}
+
+.font90 {
+    font-size: 90px;
+    text-transform: uppercase;
+    font-family: MatterSemiBold;
+}
+
+.font36 {
+    font-size: 36px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+}
+
+.font24 {
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    font-weight: lighter;
+    font-family: MatterMedium;
+}
+
+.font20 {
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    font-weight: lighter;
+}
+
+.font16 {
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    font-weight: lighter;
+}
+
+/*================================== BREAKPOINTS  ================================== */
+@media (max-width: 1460px) {
+    .font90 {
+        font-size: 72px;
+    }
+
+    .font36 {
+        font-size: 30px;
+    }
+    .font24 {
+        font-size: 22px;
+    }
+    .font20 {
+        font-size: 18px;
+    }
+
+    .font16 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .font90 {
+        font-size: 56px;
+    }
+}
+
+@media (max-width: 780px) {
+    .font90 {
+        font-size: 48px;
+    }
+    .font36 {
+        font-size: 28px;
+    }
+    .font24 {
+        font-size: 20px;
+    }
+    .font20 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .font90 {
+        font-size: 36px;
+    }
+
+    .font36 {
+        font-size: 24px;
+    }
+
+    .font24 {
+        font-size: 18px;
+    }
+
+    .font20 {
+        font-size: 14px;
+    }
+}

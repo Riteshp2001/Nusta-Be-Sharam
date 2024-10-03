@@ -1,0 +1,56 @@
+.benefits {
+    .container {
+        h3 {
+            max-width: 860px;
+            width: 100%;
+            transition: $transition;
+        }
+        /* Wrapper */
+        .benefits_wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+
+            .block {
+                transition: $transition;
+                border-top: 1px solid $borderColor;
+                padding-top: 40px;
+
+                p {
+                    color: $textGrey;
+                }
+            }
+        }
+    }
+}
+
+/*================================== BREAKPOINTS  ================================== */
+@media (max-width: 780px) {
+    .benefits {
+        .container {
+            .benefits_wrapper {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+
+                .block {
+                    padding-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .benefits {
+        .container {
+            .benefits_wrapper {
+                grid-template-columns: 1fr;
+                gap: 40px;
+
+                .block {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+:root {
+    --color-default: #fafafa;
+    --color-primary: #17E134;
+    --color-secondary: #080808;
+    --purple: rgb(123, 31, 162);
+    --violet: rgb(103, 58, 183);
+    --pink: rgb(244, 143, 177);
+    --g1: rgb(98, 0, 234);
+    --g2: rgb(236, 64, 122);
+    --scrollbar-width: 4px;
+    --scrollbar-radius: 50px;
+}
+
+
+.about {
+    padding-right: 100px;
+    .container {
+        display: flex;
+        justify-content: flex-end;
+
+        .magic{
+            display: inline-block;
+            position: relative;
+            .magic-text{
+                animation: background-pan 3s linear infinite;
+                background: linear-gradient(to right, var(--purple), var(--violet), var(--pink), var(--purple));
+                background-size: 200%;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                white-space: nowrap;
+            }
+        }
+
+        h3 {
+            max-width: 750px;
+            width: 100%;
+            transition: $transition;
+        }
+    }
+}
+
+/* Magic Text Effect */
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
+}
+
+/*================================== BREAKPOINTS  ================================== */
+@media (max-width: 1460px) {
+    .about {
+        padding-right: 0;
+
+        .container {
+            h3 {
+                max-width: 630px;
+            }
+        }
+    }
+}

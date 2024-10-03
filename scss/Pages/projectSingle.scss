@@ -1,0 +1,201 @@
+.projectSingleMain {
+    .container {
+        .ProjectSingleDetails {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            /* Wrapper */
+            .wrapper {
+                max-width: 960px;
+                width: 100%;
+
+                p {
+                    max-width: 500px;
+                    width: 100%;
+                    transition: $transition;
+                }
+
+                /* Details Block */
+                .details_block {
+                    .inner_block {
+                        display: flex;
+                        gap: 20px;
+                        border-bottom: 1px solid $borderColor;
+                        padding: 20px 0;
+                        transition: $transition;
+
+                        h5 {
+                            flex: 1;
+                            &:nth-child(1) {
+                                color: $textGrey;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//=========== Images Section
+.projectImages {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* row 1 */
+        .row1 {
+            align-items: flex-end;
+            .project_image {
+                &:nth-child(1) {
+                    width: 50%;
+                }
+                &:nth-child(2) {
+                    width: 50%;
+                }
+            }
+        }
+
+        /* row 2 */
+        .row2 {
+            align-items: flex-start;
+            .project_image {
+                &:nth-child(1) {
+                    width: 30%;
+                }
+                &:nth-child(2) {
+                    width: 40%;
+                }
+                &:nth-child(3) {
+                    width: 30%;
+                }
+            }
+        }
+
+        /* row 3 */
+        .row3 {
+            align-items: flex-start;
+            .project_image {
+                &:nth-child(1) {
+                    width: 40%;
+                }
+                &:nth-child(2) {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+//=========== Next Case
+.nextCase {
+    .container {
+        .nextCaseWrapper {
+            /* For all rows */
+            .row {
+                display: flex;
+                align-items: flex-start;
+                gap: 20px;
+
+                .col {
+                    .project_image {
+                        overflow: hidden;
+                        transition: $transition;
+                        clip-path: inset(100% 0 0 0);
+
+                        img {
+                            transition: $transition;
+                        }
+                    }
+
+                    p {
+                        color: $textGrey;
+                    }
+
+                    &:hover {
+                        .project_image {
+                            transform: scale(0.97);
+                            img {
+                                transform: scale(1.03);
+                            }
+                        }
+                    }
+
+                    &:nth-child(1) {
+                        flex: 45%;
+                    }
+
+                    &:nth-child(2) {
+                        flex: 55%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*================================== BREAKPOINTS  ================================== */
+@media (max-width: 780px) {
+    .projectSingleMain {
+        .container {
+            .ProjectSingleDetails {
+                /* Wrapper */
+                .wrapper {
+                    /* Details Block */
+                    .details_block {
+                        .inner_block {
+                            gap: 0px;
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //=========== Images Section
+    .projectImages {
+        .container {
+            .row {
+                flex-direction: column;
+                .project_image {
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    //=========== Next Case
+    .nextCase {
+        .container {
+            .nextCaseWrapper {
+                /* For all rows */
+                .row {
+                    flex-direction: column;
+                    gap: 30px;
+
+                    .col {
+                        &:nth-child(1) {
+                            flex: 100%;
+                        }
+
+                        &:nth-child(2) {
+                            flex: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

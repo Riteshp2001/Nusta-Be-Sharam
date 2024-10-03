@@ -1,0 +1,111 @@
+@import "lenisSmoothScroll.scss";
+@import "variables.scss";
+@import "font.scss";
+@import "linkHover.scss";
+@import "btn.scss";
+
+main {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    padding-bottom: 200px;
+    position: relative;
+}
+
+section {
+    width: 100%;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+// Spacings
+.container {
+    padding: 0 40px;
+}
+
+.mT150 {
+    margin-top: 150px;
+}
+
+.mT100 {
+    margin-top: 100px;
+}
+
+.mT70 {
+    margin-top: 70px;
+}
+
+.mT50 {
+    margin-top: 50px;
+}
+
+.mT30 {
+    margin-top: 30px;
+}
+
+.mT20 {
+    margin-top: 20px;
+}
+
+/*================================== BREAKPOINTS  ================================== */
+@media (max-width: 1460px) {
+    main {
+        gap: 140px;
+        padding-bottom: 140px;
+    }
+
+    .mT150 {
+        margin-top: 120px;
+    }
+
+    .mT100 {
+        margin-top: 80px;
+    }
+
+    .mT70 {
+        margin-top: 50px;
+    }
+
+    .mT50 {
+        margin-top: 30px;
+    }
+
+    .mT30 {
+        margin-top: 20px;
+    }
+
+    .mT20 {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 780px) {
+    main {
+        gap: 100px;
+        padding-bottom: 100px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .mT150 {
+        margin-top: 80px;
+    }
+
+    .mT100 {
+        margin-top: 60px;
+    }
+}

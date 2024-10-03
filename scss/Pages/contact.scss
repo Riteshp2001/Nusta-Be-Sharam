@@ -1,0 +1,84 @@
+// Variable for parallax image
+$images: ((img-1, 0.9, 1), (img-2, 0.7, 2), (img-3, 0.5, 3), (img-4, 0.3, 4));
+
+.contact {
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        /* details */
+        .details {
+            width: 40%;
+            .details_wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                transition: $transition;
+            }
+        }
+
+        // Parallax Mousemove Image
+        .parallax_image {
+            position: relative;
+            width: 60%;
+            height: 110vh;
+
+            // using $images variable
+            @each $img, $opacity, $zindex in $images {
+                ##{$img} {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: $opacity;
+                    z-index: $zindex;
+                }
+            }
+        }
+    }
+}
+
+/*================================== BREAKPOINTS  ================================== */
+@media (max-width: 1040px) {
+    .contact {
+        .container {
+            gap: 20px;
+
+            // Parallax Mousemove Image
+            .parallax_image {
+                max-height: 800px;
+            }
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .contact {
+        .container {
+            gap: 50px;
+            flex-direction: column;
+
+            .details {
+                width: 100%;
+            }
+
+            // Parallax Mousemove Image
+            .parallax_image {
+                max-height: 100vh;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .contact {
+        .container {
+            // Parallax Mousemove Image
+            .parallax_image {
+                max-height: 600px;
+            }
+        }
+    }
+}

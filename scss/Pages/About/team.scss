@@ -1,0 +1,61 @@
+.team {
+    .container {
+        /* Wrapper */
+        .teamWrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 20px;
+            row-gap: 50px;
+
+            img {
+                height: 50vh;
+            }
+
+            p {
+                color: $textGrey;
+            }
+        }
+    }
+}
+
+/*================================== BREAKPOINTS  ================================== */
+@media (max-width: 1460px) {
+    .team {
+        .container {
+            /* Wrapper */
+            .teamWrapper {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+    }
+}
+
+@media (max-width: 1040px) {
+    .team {
+        .container {
+            /* Wrapper */
+            .teamWrapper {
+                grid-template-columns: 1fr 1fr 1fr;
+
+                img {
+                    max-height: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .team {
+        .container {
+            /* Wrapper */
+            .teamWrapper {
+                grid-template-columns: 1fr 1fr;
+
+                img {
+                    max-height: 300px;
+                }
+            }
+        }
+    }
+}

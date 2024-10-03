@@ -1,0 +1,124 @@
+@import "benefits.scss";
+@import "gridAnimation.scss";
+@import "team.scss";
+
+/* About */
+.about_about {
+    .container {
+        /* About Text 1 */
+        .aboutText1 {
+            padding-left: 100px;
+            transition: $transition;
+
+            .font36 {
+                max-width: 1080px;
+                width: 100%;
+            }
+        }
+
+        /* About Image */
+        .about_img_wrapper {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            width: 100%;
+
+            .project_image {
+                width: 50%;
+
+                &:nth-child(1) {
+                    height: 60vh;
+                }
+                &:nth-child(2) {
+                    height: 120vh;
+                }
+            }
+        }
+
+        /* About Text 2 */
+        .aboutText2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                max-width: 600px;
+                width: 100%;
+                transition: $transition;
+            }
+        }
+    }
+}
+
+/* Marquee */
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 150px;
+    overflow: hidden;
+    font-size: 150px;
+    text-transform: uppercase;
+    font-family: MatterSemiBold;
+    letter-spacing: -1px;
+    line-height: 90%;
+
+    .track {
+        position: absolute;
+        white-space: nowrap;
+        will-change: transform;
+        animation: marquee 120s linear infinite;
+    }
+}
+
+/*================================== BREAKPOINTS  ================================== */
+@media (max-width: 1040px) {
+    .about_about {
+        .container {
+            .aboutText1 {
+                padding-left: 0;
+            }
+
+            .about_img_wrapper {
+                .project_image {
+                    &:nth-child(1) {
+                        max-height: 300px;
+                    }
+                    &:nth-child(2) {
+                        max-height: 700px;
+                    }
+                }
+            }
+        }
+    }
+
+    .marquee {
+        height: 100px;
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 780px) {
+    .about_about {
+        .container {
+            .about_img_wrapper {
+                flex-direction: column;
+                .project_image {
+                    width: 100%;
+                    &:nth-child(1),
+                    &:nth-child(2) {
+                        max-height: fit-content;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .marquee {
+        height: 15vw;
+        font-size: 15vw;
+    }
+}
