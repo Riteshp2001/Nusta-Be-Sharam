@@ -12,7 +12,6 @@ const topLinks = [
 const bottomLinks = [
     { href: 'https://www.instagram.com', text: 'Instagram' },
     { href: 'https://www.facebook.com', text: 'Facebook' },
-    { href: 'https://twitter.com', text: 'X (Twitter)' },
     { href: 'https://www.linkedin.com', text: 'LinkedIn' }
 ];
 

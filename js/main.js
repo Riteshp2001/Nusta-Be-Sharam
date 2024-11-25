@@ -1,33 +1,25 @@
-// Importing main style file
-import '../scss/style.scss';
-
-// Importing Loader Component
-import '../components/loader/loader';
-
-// Importing Nav Component
-import '../components/nav/nav';
-import '../components/nav/navigation_menu';
-import '../components/nav/animatingNav';
-import '../components/nav/mouseMoveImage';
-
-// Importing Footer Component
-import '../components/footer/footer';
-
-// Importing Dynamic Data File
-import './Data/data';
-
-// Importing GSAP File
-import './GSAP/gsap';
-
+// Importing subPage header animation
+import { animateSubpageHeader } from './GSAP/gsap';
 // Importing Intro Animation for landing page
 import { intro } from './GSAP/intro';
 
-// Importing subPage header animation
-import { animateSubpageHeader } from './GSAP/gsap';
-
+// Importing Footer Component
+import '../components/footer/footer';
+// Importing Nav Component
+import '../components/nav/nav';
+import '../components/nav/navigation_menu';
+// Importing Loader Component
+import '../components/loader/loader';
+import '../components/nav/animatingNav';
+import '../components/nav/mouseMoveImage';
+// Importing main style file
+import '../scss/style.scss';
 // Importing SwiperJS File
 import './clientsSwiper';
-
+// Importing Dynamic Data File
+import './Data/data';
+// Importing GSAP File
+import './GSAP/gsap';
 // Importing image trail animation file
 import './imageTrailAnim/trailAnim_installation';
 

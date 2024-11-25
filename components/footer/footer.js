@@ -16,7 +16,6 @@ const footerContent = {
 	social: [
 		{ href: "https://www.instagram.com", name: "Instagram" },
 		{ href: "https://www.facebook.com", name: "Facebook" },
-		{ href: "https://twitter.com", name: "X (Twitter)" },
 		{ href: "https://www.linkedin.com", name: "LinkedIn" },
 	],
 };
