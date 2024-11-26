@@ -14,9 +14,9 @@ const footerContent = {
 		{ name: "Contact Us", href: "contact.html" },
 	],
 	social: [
-		{ href: "https://www.instagram.com", name: "Instagram" },
-		{ href: "https://www.facebook.com", name: "Facebook" },
-		{ href: "https://www.linkedin.com", name: "LinkedIn" },
+		{ href: "https://www.instagram.com/nusta_be_sharam/profilecard/?igsh=MTk2bGpjdmFscWVybw==", name: "Instagram" },
+		{ href: "https://www.facebook.com/profile.php?id=61566457276162&mibextid=ZbWKwL", name: "Facebook" },
+		{ href: "https://www.x.com", name: "LinkedIn" },
 	],
 };
 
@@ -53,5 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         </div>
         <h5 class="bigHeading mT100">${footerContent.info.company}</h5>
+		<h6 class="creator mT50">made with 🔥 by <a class="creator-link" href="https://riteshpandit.vercel.app/" target="_blank"> Ritesh Pandit</a></h6>
     `;
 });

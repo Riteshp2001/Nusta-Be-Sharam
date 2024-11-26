@@ -10,9 +10,9 @@ const topLinks = [
     { href: 'contact.html', text: 'Contact Us' }
 ];
 const bottomLinks = [
-    { href: 'https://www.instagram.com', text: 'Instagram' },
-    { href: 'https://www.facebook.com', text: 'Facebook' },
-    { href: 'https://www.linkedin.com', text: 'LinkedIn' }
+    { href: 'https://www.instagram.com/nusta_be_sharam/profilecard/?igsh=MTk2bGpjdmFscWVybw==', text: 'Instagram' },
+    { href: 'https://www.facebook.com/profile.php?id=61566457276162&mibextid=ZbWKwL', text: 'Facebook' },
+    { href: 'https://www.x.com', text: 'X (formally Twitter)' }
 ];
 
 document.addEventListener("DOMContentLoaded", function () {

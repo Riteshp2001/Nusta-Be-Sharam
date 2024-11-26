@@ -2,59 +2,89 @@
 @import "Pages/pages.scss";
 
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body,
 html {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 body {
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    min-height: -webkit-fill-available;
-    background: $black;
-    color: $white;
-    font-family: MatterLight;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	min-height: -webkit-fill-available;
+	background: $black;
+	color: $white;
+	font-family: MatterLight;
 }
 
 html {
-    height: -webkit-fill-available;
+	height: -webkit-fill-available;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+	width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: none;
+	background: none;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #e0fd60;
+	background: #e0fd60;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #e0fd60;
+	background: #e0fd60;
 }
 
+.creator {
+	margin-top: 50px; /* Equivalent to mT50 */
+	font-size: 0.875rem; /* Adjust font size as needed */
+	color: #555; /* Example color */
+	text-align: center;
+    margin-bottom: 20px;
+}
 
+.creator-link {
+	color: #007bff; /* Link color */
+	text-decoration: none;
+	font-weight: bold;
+	position: relative; /* Required for pseudo-element positioning */
+    border-top: 1px dotted #555;
+    border-bottom: 1px dotted #555;
+}
+
+.creator-link::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -2px; /* Adjust for spacing */
+	width: 0;
+	height: 2px; /* Thickness of underline */
+	background-color: #007bff; /* Underline color */
+	transition: width 0.3s ease-in-out; /* Animation */
+}
+
+.creator-link:hover::after {
+	width: 100%; /* Expands the underline */
+}
