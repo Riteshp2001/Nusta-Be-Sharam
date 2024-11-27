@@ -65,10 +65,10 @@
 					<!-- About Image Wrapper -->
 					<div class="about_img_wrapper mT70">
 						<div class="project_image">
-							<img src="about1.webp" alt="About Image" />
+							<img loading="lazy" src="about1.webp" alt="About Image" />
 						</div>
 						<div class="project_image">
-							<img src="about2.webp" alt="About Image" />
+							<img loading="lazy" src="about2.webp" alt="About Image" />
 						</div>
 					</div>
 
@@ -283,7 +283,7 @@
 				const div = document.createElement("div");
 				div.className = "grid__item";
 				div.innerHTML = `<div class="grid__item-inner" style="background-image: url(${image})"></div>`;
-				container.appendChild(div); 
+				container.appendChild(div);
 			});
 		</script>
 	</body>

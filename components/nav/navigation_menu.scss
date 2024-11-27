@@ -5,115 +5,115 @@ $images: ((img-1, 0.9, 1), (img-2, 0.7, 2), (img-3, 0.5, 3), (img-4, 0.3, 4));
 
 // Animating Navigation Menu
 .navigation_menu {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    display: flex;
-    align-items: center;
-    z-index: 100000;
-    transition: $transition;
-    overflow: hidden;
-    background: $secondaryBlack;
-    transform: translateY(-100%);
-    visibility: hidden;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+	z-index: 100000;
+	transition: $transition;
+	overflow: hidden;
+	background: var(--secondaryBlack);
+	transform: translateY(-100%);
+	visibility: hidden;
 
-    // Parallax Mousemove Image
-    .parallax_image {
-        position: relative;
-        width: 75%;
-        height: 100%;
+	// Parallax Mousemove Image
+	.parallax_image {
+		position: relative;
+		width: 75%;
+		height: 100%;
 
-        // using $images variable
-        @each $img, $opacity, $zindex in $images {
-            ##{$img} {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                opacity: $opacity;
-                z-index: $zindex;
-            }
-        }
-    }
+		// using $images variable
+		@each $img, $opacity, $zindex in $images {
+			##{$img} {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				opacity: $opacity;
+				z-index: $zindex;
+			}
+		}
+	}
 
-    // Menu Links
-    .menu_links {
-        width: 25%;
-        padding: 40px;
+	// Menu Links
+	.menu_links {
+		width: 25%;
+		padding: 40px;
 
-        .top {
-            a {
-                font-size: 40px;
-                font-family: MatterSemiBold;
-            }
-        }
+		.top {
+			a {
+				font-size: 40px;
+				font-family: MatterSemiBold;
+			}
+		}
 
-        .bottom {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            margin-top: 5vw;
-        }
-    }
+		.bottom {
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+			margin-top: 5vw;
+		}
+	}
 }
 
 // For animation
 .menu_link_block {
-    overflow: hidden;
+	overflow: hidden;
 }
 
 /*================================== BREAKPOINTS  ================================== */
 @media (max-width: 1460px) {
-    .navigation_menu {
-        // Menu Links
-        .menu_links {
-            .top {
-                a {
-                    font-size: 30px;
-                }
-            }
-        }
-    }
+	.navigation_menu {
+		// Menu Links
+		.menu_links {
+			.top {
+				a {
+					font-size: 30px;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 1040px) {
-    .navigation_menu {
-        .parallax_image {
-            width: 60%;
-            max-height: 700px;
-        }
+	.navigation_menu {
+		.parallax_image {
+			width: 60%;
+			max-height: 700px;
+		}
 
-        // Menu Links
-        .menu_links {
-            padding: 0px;
-        }
-    }
+		// Menu Links
+		.menu_links {
+			padding: 0px;
+		}
+	}
 }
 
 @media (max-width: 600px) {
-    .navigation_menu {
-        .parallax_image {
-            width: 00%;
-            visibility: hidden;
-        }
+	.navigation_menu {
+		.parallax_image {
+			width: 00%;
+			visibility: hidden;
+		}
 
-        // Menu Links
-        .menu_links {
-            width: 100%;
-            padding: 20px;
+		// Menu Links
+		.menu_links {
+			width: 100%;
+			padding: 20px;
 
-            .top {
-                a {
-                    font-size: 11vw;
-                }
-            }
+			.top {
+				a {
+					font-size: 11vw;
+				}
+			}
 
-            .bottom {
-                gap: 10px;
-                margin-top: 20vw;
-            }
-        }
-    }
+			.bottom {
+				gap: 10px;
+				margin-top: 20vw;
+			}
+		}
+	}
 }

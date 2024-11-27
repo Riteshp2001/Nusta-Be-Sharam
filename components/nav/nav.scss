@@ -2,110 +2,110 @@
 
 // Nav
 nav {
-    width: 100%;
-    padding: 40px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 10000000;
-    mix-blend-mode: difference;
+	width: 100%;
+	padding: 40px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 10000000;
+	mix-blend-mode: difference;
 
-    .logo {
-        span {
-            font-size: 22px;
-            text-transform: uppercase;
-            font-family: MatterSemiBold;
-            letter-spacing: 0.1em;
-        }
-    }
+	.logo {
+		span {
+			font-size: 22px;
+			text-transform: uppercase;
+			font-family: MatterSemiBold;
+			letter-spacing: 0.1em;
+		}
+	}
 
-    /* Hamburger */
-    .hamburger {
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 15px;
+	/* Hamburger */
+	.hamburger {
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		gap: 15px;
 
-        p {
-            font-size: 18px;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            font-family: MatterMedium;
-        }
+		p {
+			font-size: 18px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			font-family: MatterMedium;
+		}
 
-        .circle {
-            background: $white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 7px;
-            padding: 10px;
-            transition: $transition;
+		.circle {
+			background: var(--white);
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			gap: 7px;
+			padding: 10px;
+			transition: $transition;
 
-            .line {
-                width: 100%;
-                height: 1px;
-                background: $black;
-            }
-        }
-    }
+			.line {
+				width: 100%;
+				height: 1px;
+				background: $black;
+			}
+		}
+	}
 }
 
 /*================================== BREAKPOINTS  ================================== */
 @media (max-width: 1460px) {
-    // Nav
-    nav {
-        padding: 20px 40px;
+	// Nav
+	nav {
+		padding: 20px 40px;
 
-        .logo {
-            span {
-                font-size: 20px;
-            }
-        }
+		.logo {
+			span {
+				font-size: 20px;
+			}
+		}
 
-        /* Hamburger */
-        .hamburger {
-            gap: 10px;
+		/* Hamburger */
+		.hamburger {
+			gap: 10px;
 
-            p {
-                font-size: 16px;
-            }
+			p {
+				font-size: 16px;
+			}
 
-            .circle {
-                transform: scale(0.9);
-            }
-        }
-    }
+			.circle {
+				transform: scale(0.9);
+			}
+		}
+	}
 }
 
 @media (max-width: 780px) {
-    // Nav
-    nav {
-        padding: 20px;
-    }
+	// Nav
+	nav {
+		padding: 20px;
+	}
 }
 
 @media (max-width: 600px) {
-    // Nav
-    nav {
-        /* Hamburger */
-        .hamburger {
-            gap: 5px;
+	// Nav
+	nav {
+		/* Hamburger */
+		.hamburger {
+			gap: 5px;
 
-            p {
-                font-size: 14px;
-            }
+			p {
+				font-size: 14px;
+			}
 
-            .circle {
-                transform: scale(0.8);
-            }
-        }
-    }
+			.circle {
+				transform: scale(0.8);
+			}
+		}
+	}
 }
