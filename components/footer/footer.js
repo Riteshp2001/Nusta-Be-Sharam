@@ -14,9 +14,18 @@ const footerContent = {
 		{ name: "Contact Us", href: "contact.html" },
 	],
 	social: [
-		{ href: "https://www.instagram.com/nusta_be_sharam/profilecard/?igsh=MTk2bGpjdmFscWVybw==", name: "Instagram" },
-		{ href: "https://www.facebook.com/profile.php?id=61566457276162&mibextid=ZbWKwL", name: "Facebook" },
-		{ href: "https://www.x.com", name: "LinkedIn" },
+		{
+			href: "https://www.instagram.com/nusta_be_sharam/profilecard/?igsh=MTk2bGpjdmFscWVybw==",
+			name: "Instagram",
+		},
+		{
+			href: "https://www.facebook.com/profile.php?id=61566457276162&mibextid=ZbWKwL",
+			name: "Facebook",
+		},
+		{
+			href: "https://x.com/Nusta_be_sharam?t=xXFVLrKAsVHd20hD0gMnVw&s=09",
+			name: "X (formarly Twitter)",
+		},
 	],
 };
 
@@ -29,7 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h5 class="font24 ">${footerContent.info.tagline}</h5>
                 <h5 class="font24">
 					<span class="magic">
-						<span class="magic-text">©${footerContent.info.year} ${footerContent.info.company}</span>
+						<span class="magic-text">©${footerContent.info.year} ${
+		footerContent.info.company
+	}</span>
 					</span>
 				</h5>
             </div>

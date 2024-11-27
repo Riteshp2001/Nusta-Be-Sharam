@@ -12,7 +12,7 @@ const topLinks = [
 const bottomLinks = [
     { href: 'https://www.instagram.com/nusta_be_sharam/profilecard/?igsh=MTk2bGpjdmFscWVybw==', text: 'Instagram' },
     { href: 'https://www.facebook.com/profile.php?id=61566457276162&mibextid=ZbWKwL', text: 'Facebook' },
-    { href: 'https://www.x.com', text: 'X (formally Twitter)' }
+    { href: 'https://x.com/Nusta_be_sharam?t=xXFVLrKAsVHd20hD0gMnVw&s=09', text: 'X (formally Twitter)' }
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
