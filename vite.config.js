@@ -2,7 +2,6 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
 
-import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 export default defineConfig({
 	build: {
 		rollupOptions: {
@@ -11,11 +10,10 @@ export default defineConfig({
 				projects: resolve(__dirname, "projects.html"),
 				about: resolve(__dirname, "about.html"),
 				contact: resolve(__dirname, "contact.html"),
-				projectSingle: resolve(__dirname, "underwaterrealms.html"),
-				ganeshChaturthi: resolve(__dirname, "ganeshchaturthi.html"),
+				ganeshchaturthi: resolve(__dirname, "ganeshchaturthi.html"),
 				moharram: resolve(__dirname, "moharram.html"),
-				streetPortraits: resolve(__dirname, "streetportraits.html"),
-				carterRoad: resolve(__dirname, "carterroad.html"),
+				streetportraits: resolve(__dirname, "streetportraits.html"),
+				carterroad: resolve(__dirname, "carterroad.html"),
 				cricket: resolve(__dirname, "cricket.html"),
 				banganga: resolve(__dirname, "banganga.html"),
 				monochrome: resolve(__dirname, "monochrome.html"),
@@ -26,10 +24,4 @@ export default defineConfig({
 	server: {
 		historyApiFallback: true, // Enable SPA fallback
 	},
-	plugins: [
-		ViteImageOptimizer({
-			webp: { quality: 50 },
-			cache: true,
-		}),
-	],
 });
