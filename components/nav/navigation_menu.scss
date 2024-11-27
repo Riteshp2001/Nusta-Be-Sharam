@@ -15,7 +15,7 @@ $images: ((img-1, 0.9, 1), (img-2, 0.7, 2), (img-3, 0.5, 3), (img-4, 0.3, 4));
 	z-index: 100000;
 	transition: $transition;
 	overflow: hidden;
-	background: var(--secondaryBlack);
+	background: $secondaryBlack;
 	transform: translateY(-100%);
 	visibility: hidden;
 
