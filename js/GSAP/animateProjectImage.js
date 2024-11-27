@@ -10,6 +10,7 @@ export function animateProjectImage() {
 
 	if (projectImages.length > 0) {
 		projectImages.forEach((img) => {
+			// Scroll-triggered animation
 			gsap.fromTo(
 				img,
 				{
@@ -28,6 +29,23 @@ export function animateProjectImage() {
 					},
 				}
 			);
+
+			// Hover effect
+			img.addEventListener("mouseenter", () => {
+				gsap.to(img, {
+					scale: 1.05, // Slightly zoom in
+					duration: 0.3, // Smooth transition
+					ease: "power2.out",
+				});
+			});
+
+			img.addEventListener("mouseleave", () => {
+				gsap.to(img, {
+					scale: 1, // Reset to original size
+					duration: 0.3,
+					ease: "power2.out",
+				});
+			});
 		});
 	}
 }
