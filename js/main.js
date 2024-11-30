@@ -18,8 +18,6 @@ import "../scss/style.scss";
 import "./clientsSwiper";
 // Importing Dynamic Data File
 import "./Data/data";
-// Importing Embla Carousel File
-import "./embla";
 // Importing GSAP File
 import "./GSAP/gsap";
 // Importing image trail animation file
