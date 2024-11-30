@@ -22,7 +22,7 @@ const reviews = [
 
 // Function to generate swiper slides dynamically
 export function generateSwiperSlides() {
-	const swiperWrapper = document.querySelector(".swiper-wrapper");
+	const swiperWrapper = document.querySelector("#clientsSwiper");
 	if (swiperWrapper) {
 		const slideHTML = reviews
 			.map(

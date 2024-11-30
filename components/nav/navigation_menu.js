@@ -10,7 +10,7 @@ const images = [
 ];
 const topLinks = [
 	{ href: "index.html", text: "Home" },
-	{ href: "projects.html", text: "Projects" },
+	{ href: "projects.html", text: "Work" },
 	{ href: "about.html", text: "About" },
 	{ href: "contact.html", text: "Contact Us" },
 ];

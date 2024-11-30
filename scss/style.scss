@@ -1,6 +1,5 @@
 @import "utilities/utilities.scss";
 @import "Pages/pages.scss";
-
 * {
 	margin: 0;
 	padding: 0;
@@ -62,7 +61,7 @@ html {
 	font-size: 0.875rem; /* Adjust font size as needed */
 	color: #555; /* Example color */
 	text-align: center;
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .creator-link {
@@ -70,8 +69,8 @@ html {
 	text-decoration: none;
 	font-weight: bold;
 	position: relative; /* Required for pseudo-element positioning */
-    border-top: 1px dotted #555;
-    border-bottom: 1px dotted #555;
+	border-top: 1px dotted #555;
+	border-bottom: 1px dotted #555;
 }
 
 .creator-link::after {
@@ -88,3 +87,4 @@ html {
 .creator-link:hover::after {
 	width: 100%; /* Expands the underline */
 }
+
