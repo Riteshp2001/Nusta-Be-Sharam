@@ -12,22 +12,22 @@ export function intro() {
     gsap.timeline({
         onComplete: () => {
             gsap.to(counter, {
-                y: '-500', duration: 1.5, ease: "Expo.easeInOut",
+                y: '-500', duration: 0.5, ease: "Expo.easeInOut",
                 onComplete: () => counter.remove()
             });
             gsap.to(introSection, {
-                y: '-100%', duration: 1.6, delay: .2, ease: "Expo.easeInOut",
+                y: '-100%', duration: 0.6, delay: 0.1, ease: "Expo.easeInOut",
                 onComplete: () => introSection.remove()
             });
             gsap.from(heroText, {
-                y: '50%', opacity: 0, duration: 1.6, delay: .2, ease: "Expo.easeInOut",
+                y: '50%', opacity: 0, duration: 0.6, delay: 0.1, ease: "Expo.easeInOut",
             });
         }
     })
         .to(counter, {
             innerText: 100,
             snap: "innerText",
-            duration: 4,
+            duration: 1,
             onUpdate: () => {
                 const roundedText = `${Math.round(counter.textContent)}`;
                 counter.textContent = roundedText;
